@@ -49,7 +49,7 @@ public class Tekst extends Innlegg {
 	
 	public String toHTML() {
 		
-		return toString();
+		return "<p>DAT100 oppgave 6</p>";
 				
 	}
 }

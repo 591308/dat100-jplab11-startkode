@@ -38,14 +38,13 @@ public class Bilde extends Tekst {
 	public String toString() {
 		
 		return "BILDE\n" + this.getId() + "\n" + this.getBruker() + "\n" + this.getDato() + "\n" + this.getLikes() + "\n" + this.getTekst() + "\n" + url + "\n";
-		
 
 	}
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 		
-		return toString();
+		return "<iframe></iframe>";
 				
 	}
 }

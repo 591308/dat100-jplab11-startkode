@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-import no.hvl.dat100.jplab11.common.TODO;
 import no.hvl.dat100.jplab11.oppgave1.*;
 import no.hvl.dat100.jplab11.oppgave2.*;
 import no.hvl.dat100.jplab11.oppgave3.*;
@@ -22,7 +21,28 @@ public class LesBlogg {
 
 	public static Blogg les(String mappe, String filnavn) {
 
-		throw new UnsupportedOperationException(TODO.method());
-
+		/*Åpne filen for lesing
+		 * Les inn(første) linje fra filen
+		 * Gjenta til slutten på filen
+		 * 		Behandle innlest lije
+		 * 		Les inn(neste) linje fra filen
+		 * Lukk filen
+		 */
+		try {
+			
+			File file = new File(mappe + filnavn);
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+		
+			String line;
+			while(reader.ready()) {
+				line = reader.readLine();
+				System.out.println(line);
+			}
+			reader.close();
+			
+			}catch (Exception e) {
+		
+			}
+		return null;
+			}
 	}
-}

@@ -9,7 +9,7 @@ public class Blogg {
 	private int nesteledig;
 
 	public Blogg() {
-		
+	
 		innleggtabell = new Innlegg[20];
 	}
 
@@ -72,11 +72,9 @@ public class Blogg {
 	
 	
 	public String toString() {
-		
 		String x = getAntall() + "\n";  //legge til antall til eksisterande tabell også utvide den vidare
 		for(int i = 0; i < innleggtabell.length; i++) {
 			x += innleggtabell[i]; //
-			
 		}
 		return x;
 	}
@@ -125,7 +123,7 @@ public class Blogg {
 	
 	public int[] search(String keyword) {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
 
 	}
 }
